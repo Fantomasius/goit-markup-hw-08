@@ -1,0 +1,34 @@
+.services-list .services-title {
+	color: $primary-white-color;
+	background-color: rgba(47, 48, 58, 0.8);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.services-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-item {
+	position: relative;
+	width: 370px;
+}
+
+.services-title {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}

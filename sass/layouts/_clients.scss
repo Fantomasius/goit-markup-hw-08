@@ -1,0 +1,33 @@
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients-link {
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 90px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+
+	transition: border $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1),
+		fill $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon {
+	fill: #afb1b8;
+	transition: fill $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+	border-color: $accent-color;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+	fill: $accent-color;
+}

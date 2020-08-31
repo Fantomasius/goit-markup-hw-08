@@ -1,0 +1,181 @@
+.button {
+	display: inline-block;
+	padding: 8px 30px;
+	border-radius: 4px;
+	border-color: transparent;
+	min-width: 200px;
+
+	color: $primary-white-color;
+	background-color: $accent-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: color $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1),
+		background-color $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-radius: 4px;
+		color: $accent-color;
+		background-color: $primary-white-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.footer-button {
+	padding-top: 8px;
+	padding-right: 26px;
+	padding-bottom: 8px;
+	padding-left: 27px;
+	border-radius: 4px;
+	border-color: transparent;
+	min-width: 200px;
+
+	color: $primary-white-color;
+	background-color: $accent-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: color $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1),
+		background-color $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footerbtn-text {
+	margin-right: 10px;
+}
+
+.icon-telegram {
+	fill: $primary-white-color;
+	transition: fill $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+	border-radius: 4px;
+	fill: $accent-color;
+	color: $accent-color;
+	background-color: $primary-white-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-button:hover .icon-telegram,
+.footer-button:focus .icon-telegram {
+	fill: $accent-color;
+}
+
+.button-close {
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+
+	background-color: $primary-white-color;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close-icon {
+	fill: #000000;
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close:hover,
+.button-close:focus {
+	background-color: $primary-white-color;
+	fill: $accent-color;
+}
+
+.button-close:hover .button-close-icon,
+.button-close:focus .button-close-icon {
+	fill: $accent-color;
+}
+
+.form-button {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 4px;
+	border-color: transparent;
+	min-width: 200px;
+
+	color: $primary-white-color;
+	background-color: $accent-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-radius: 4px;
+		color: $accent-color;
+		background-color: $primary-white-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.portfolio-button {
+	display: inline-block;
+	padding: 4px 20px;
+	border-radius: 4px;
+	border-color: transparent;
+
+	color: $title-text-color;
+	background-color: $secondary-white-color;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $primary-white-color;
+		background-color: $accent-color;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}

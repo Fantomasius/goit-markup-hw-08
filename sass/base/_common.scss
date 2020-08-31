@@ -1,0 +1,83 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:hover,
+:focus {
+	outline-color: $accent-color;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $primary-white-color;
+	color: $primary-text-color;
+
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.block {
+	display: block;
+}
+
+.container {
+	background-color: $primary-white-color;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*outline: 2px solid tomato;*/
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.section.no-padding {
+	padding-top: 94px;
+	padding-bottom: 0;
+}
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+	color: $title-text-color;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+.section-title.centered {
+	text-align: center;
+}

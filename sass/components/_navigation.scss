@@ -1,0 +1,114 @@
+.navigation {
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	margin-left: 85px;
+}
+
+.nav .item {
+	margin-right: 50px;
+	/*background-color: tomato;*/
+}
+
+.nav .item:last-child {
+	margin-right: 0;
+}
+
+.nav .nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: $title-text-color;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+	color: $accent-color;
+}
+
+.nav .nav-link.current {
+	position: relative;
+	color: $accent-color;
+}
+
+.nav .nav-link.current:after {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	top: 76px;
+	left: 0;
+	background-color: $accent-color;
+}
+
+.contact {
+	display: flex;
+	margin-left: auto;
+}
+
+.contact .item {
+	margin-right: 30px;
+	/*background-color: teal;*/
+}
+
+.contact .item:last-child {
+	margin-right: 0;
+}
+
+.item {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: $primary-text-color;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	fill: $primary-text-color;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus {
+	color: $accent-color;
+}
+
+.header-link:hover .link-icon,
+.header-link:focus .link-icon {
+	color: $accent-color;
+	fill: $accent-color;
+}
